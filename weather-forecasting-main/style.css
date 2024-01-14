@@ -1,0 +1,206 @@
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 750px;
+  background-attachment: fixed;
+}
+
+#Gmap {
+  box-shadow: 3px 3px 8px black;
+  padding: 35px;
+  border-radius: 10px;
+  position: absolute;
+  visibility: hidden;
+  color: aliceblue;
+}
+
+#backButton{
+  visibility: hidden;
+  position: absolute;
+}
+
+
+.navbar{
+  position: fixed;
+  width: -webkit-fill-available;
+  z-index: 1;
+}
+
+.weatherData{
+  margin-top: 50px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#weatherContainer {
+  background-color: rgba(0, 0, 0, 0.50);
+  box-shadow: 3px 3px 8px black;
+  padding: 35px;
+  border-radius: 10px;
+  position: absolute;
+  visibility: hidden;
+  color: aliceblue;
+}
+
+#weatherContainer h1 {
+  margin-bottom: 10px;
+  font-size: 42px;
+  @import url:('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#weatherContainer h5{
+  float: left;
+}
+
+#locationOfCity{
+  float: right;
+}
+
+#weatherMain {
+  clear: both;
+  display: block;
+  margin-bottom: 20px;
+}
+
+#weatherMain div {
+  display: inline-block;
+}
+
+#locationOfCity{
+  width: 40px;
+  height: 40px;
+}
+#locationIcon{
+  padding-left: 4px;
+  padding-top: 4px;
+  max-width: 30px;
+}
+#locationIcon:hover{
+  max-width: 34px;
+  padding-top: 2px;
+  padding-left: 0px;
+}
+
+#timezone{
+  content-visibility: visible;
+}
+
+#temp{
+  vertical-align: 25%;
+}
+
+#temperature {
+  font-size: 38px;
+}
+
+#minmax{
+  color: blanchedalmond;
+}
+
+#weatherDescriptionHeader {
+  font-size: 28px;
+  vertical-align: 50%;
+  float: left;
+  margin-right: 50px;
+}
+
+#documentIconImg {
+  width: 60px;
+  padding: 2px;
+  margin-top: -10px;
+  background-color: rgba(127, 255, 212, 0.75);
+  border-radius: 50%;
+}
+
+.bottom-details {
+  display: block;
+  font-size: 20px;
+  text-align: right;
+}
+
+#hourlyContainer{
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 3px 3px 8px black;
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  visibility: hidden;
+  color: rgb(255, 246, 240);
+  width: 70%;
+  min-width: 400px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+canvas{
+  margin: 15px auto;
+}
+
+
+.predictionBtn{
+  position: absolute;
+  visibility: hidden;
+}
+
+#pridictionContainer{
+  background-color: rgb(250, 250, 250);
+  box-shadow: 3px 3px 8px rgb(0, 0, 0);
+  padding: 20px;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 10px;
+  position: absolute;
+  visibility: hidden;
+  color: rgb(1, 10, 17);
+  overflow: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
+  display: block;
+  list-style: none;
+}
+#pridictionContainer::-webkit-scrollbar{
+  display: none;
+}
+
+.multiData{
+  border: 1px solid rgb(15, 1, 1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+#scrollbar {
+  position: absolute;
+  top: 160%;
+  width: 100%;
+  visibility: hidden;
+}
+
+#prev {
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  background-color: #ceaaaa;
+  padding: 5px;
+  cursor: pointer;
+  top: 10px;
+  border-radius: 50% 5% 5% 50%;
+  font-weight: bold;
+}
+
+#next {
+  position: absolute;
+  right: 10px;
+  display: inline-block;
+  background-color: #ceaaaa;
+  padding: 5px;
+  cursor: pointer;
+  top: 10px;
+  border-radius: 5% 50% 50% 5%;
+  font-weight: bold;
+}
+
